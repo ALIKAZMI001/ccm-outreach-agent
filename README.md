@@ -12,7 +12,7 @@ A voice agent that calls patients enrolled in chronic care management — and an
 
 ```mermaid
 flowchart TD
-    O["<b>Outbound call</b><br/>manual · scheduled · auto-redial"] --> V
+    O["<b>Outbound call</b><br/>automatic · scheduled callbacks · auto-redial"] --> V
     I["<b>Inbound call</b><br/>patient calls in"] --> V
     V["<b>Verify the patient's identity</b>"] --> Q
     Q["<b>Wellness questionnaire</b><br/>run as a natural phone conversation<br/><i>voicemail detection · resume after dropped call<br/>schedule a callback · hand-off to a human</i>"] --> S
@@ -21,7 +21,7 @@ flowchart TD
 
 ## Capabilities
 
-- **Outbound calls** — placed manually, on a scheduled callback, or by auto-redial after a dropped call.
+- **Outbound calls** — placed automatically, including scheduled callbacks and auto-redial after a dropped call.
 - **Inbound calls** — patients can call in and are verified before the questionnaire starts.
 - **Identity verification** before any questions are asked.
 - **Natural conversation** — the monthly wellness questionnaire is asked conversationally.
